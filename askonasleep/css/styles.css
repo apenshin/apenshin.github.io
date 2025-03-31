@@ -440,6 +440,12 @@ section {
   gap: 2.0138888889vw;
   margin-top: 1.6666666667vw;
 }
+.monitoring__app-link {
+  color: var(--primary-color);
+}
+.monitoring__app-link svg {
+  fill: currentColor;
+}
 .monitoring__app-icon {
   width: 5vw;
   height: 5vw;
@@ -753,6 +759,15 @@ section {
   display: flex;
   justify-content: center;
   gap: 0.8333333333vw;
+}
+.cta__app-link {
+  color: var(--background-color);
+}
+.cta__app-link:hover {
+  color: var(--hover-color);
+}
+.cta__app-link svg {
+  fill: currentColor;
 }
 .cta__google {
   height: 3.8888888889vw;

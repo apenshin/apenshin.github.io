@@ -436,6 +436,12 @@ section {
     gap: px-to-vw(29px);
     margin-top: px-to-vw(24px);
   }
+  &__app-link{
+    color: var(--primary-color);
+    svg{
+      fill: currentColor;
+    }
+  }
 
   &__app-icon {
     width: px-to-vw(72px);
@@ -832,7 +838,13 @@ section {
   }
 
   &__app-link {
-
+    color: var(--background-color);
+    &:hover{
+      color: var(--hover-color);
+    }
+    svg{
+      fill: currentColor;
+    }
   }
 
   &__google {
