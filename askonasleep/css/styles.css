@@ -443,6 +443,9 @@ section {
 .monitoring__app-link {
   color: var(--primary-color);
 }
+.monitoring__app-link:hover {
+  color: var(--hover-color);
+}
 .monitoring__app-link svg {
   fill: currentColor;
 }
