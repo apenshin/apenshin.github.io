@@ -1,0 +1,109 @@
+.footer {
+  background-color: var(--footer-background);
+  padding: px-to-vw(137px) 0 40px 0;
+  border-radius: px-to-vw(80px) px-to-vw(80px) 0 0;
+  position: relative;
+
+  &__container {
+
+    margin: 0 auto;
+    max-width:px-to-vw( 1344px);
+    text-align: center;
+    display: flex;
+    gap: px-to-vw(24px);
+
+  }
+
+  &__logo {
+    box-shadow: 0px 0px 6px 0px #55FFFC;
+    width: px-to-vw(64px);
+    height: px-to-vw(64px);;
+    border-radius: px-to-vw(16px);
+
+  }
+
+
+  &__contacts {
+    margin-bottom: 20px;
+    display: flex;
+    gap: px-to-vw(52px);
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+  }
+
+  &__contact-link {
+    display: flex;
+    gap: px-to-vw(12px);
+    color: var(--link-color);
+    align-items: center;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+
+  &__icon {
+    width: px-to-vw(32px);
+    height: px-to-vw(32px);
+  }
+
+  &__legal {
+    display: flex;
+
+    &-link {
+      display: block;
+      margin: 10px 0;
+      color: $secondary-color;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+
+  &__moon {
+    position: absolute;
+    width: px-to-vw(230px);
+
+    top: px-to-vw(-85px);
+    right: px-to-vw(432px);
+    rotate: -14.04deg;
+
+  }
+
+  &__slogan {
+    position: absolute;
+    right: px-to-vw(112px);
+    top: px-to-vw(33px);
+    width: px-to-vw(306px);
+    rotate: -3.53deg;
+  }
+
+  &__menu {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+
+    &:not(:last-child)::after {
+      content: " / ";
+      color: #fff;
+      margin: 0 px-to-vw(12px);
+    }
+  }
+
+  &__menu-link {
+
+    font-weight: 400;
+    font-size: px-to-vw(16px);
+    line-height: 150%;
+    color: #fff;
+
+
+  }
+
+}

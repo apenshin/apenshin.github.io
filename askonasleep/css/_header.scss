@@ -1,0 +1,114 @@
+// Шапка
+.header {
+
+  padding-top: px-to-vw(40px);
+  margin-bottom: px-to-vw(14px);
+
+  &__container {
+    @include flex-center;
+    justify-content: space-between;
+
+
+  }
+
+
+  &__logos {
+    display: flex;
+    gap: px-to-vw(32px);
+    align-items: center;
+  }
+
+  &__menu {
+
+
+    &-link {
+      color: $primary-color;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+
+  &__apps {
+    @include flex-center;
+    gap: px_to-vw(25px);
+    flex: 0 0 auto;
+
+
+    img {
+      width: px-to-vw(64px);
+      height: px-to-vw(64px);
+
+      @media (max-width: 768px) {
+        width: px-to-vw(32px);
+        height: px-to-vw(32px);
+
+      }
+
+    }
+  }
+
+  &__app-link {
+    display: inline-block;
+    display: flex;
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--hover-color);
+    }
+
+    svg {
+      fill: currentColor
+    }
+  }
+
+  &__google {
+    width: px-to-vw(64px);
+    height: px-to-vw(64px);
+  }
+
+  &__apple {
+    width: px-to-vw(64px);
+    height: px-to-vw(64px);
+  }
+
+
+}
+
+.nav {
+  list-style: none;
+  @include flex-center;
+  gap: px-to-vw(20px);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: px-to-vw(24px);
+
+    font-weight: 500;
+
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    &:hover {
+      color: var(--link-hover-color);
+    }
+
+
+  }
+}
+
+.logo {
+  &__icon {
+    height: px-to-vw(64px);
+  }
+
+  &__askona {
+    height: px-to-vw(40px);
+  }
+}
