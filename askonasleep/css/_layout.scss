@@ -576,7 +576,8 @@ section {
 
 .products {
   padding-top: px-to-vw(180px);
-  background: url("../img/bg_products.png");
+  background: url("../img/bg_products.png") no-repeat;
+  background-size: cover;
   position: relative;
 
   &__container {
@@ -605,6 +606,7 @@ section {
     position: absolute;
     top: 10px;
     z-index: 0;
+    right: 0;
   }
 }
 
