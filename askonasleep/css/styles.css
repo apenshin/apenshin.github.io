@@ -373,6 +373,7 @@ section {
 .features__swiper-button-next {
   color: var(--slider-arrow);
   display: flex;
+  cursor: pointer;
 }
 .features__swiper-button-next svg {
   fill: currentColor;
@@ -586,6 +587,8 @@ section {
 .product {
   border-radius: 4.4444444444vw;
   background: #012F43;
+  background: url("../img/products/bg.png") no-repeat;
+  background-size: cover;
   padding: 0 2.7777777778vw 2.7777777778vw;
   width: 36.1111111111vw;
   text-align: center;

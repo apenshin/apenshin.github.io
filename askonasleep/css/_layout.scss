@@ -347,6 +347,7 @@ section {
   &__swiper-button-next {
     color: var(--slider-arrow);
     display: flex;
+    cursor: pointer;
 
     svg {
       fill: currentColor;
@@ -610,6 +611,8 @@ section {
 .product {
   border-radius: px-to-vw(64px);
   background: #012F43;
+  background: url("../img/products/bg.png") no-repeat;
+  background-size: cover;
   padding: 0 px-to-vw(40px) px-to-vw(40px);
   width: px-to-vw(520px);
   text-align: center;
